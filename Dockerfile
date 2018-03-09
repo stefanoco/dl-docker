@@ -4,7 +4,8 @@ LABEL version="0.17.1"
 LABEL description="DL-Ticket by Yuri D’Elia <wavexx@thregr.org>"
 LABEL mantainer "Roberto Salgado <drober@gmail.com>"
 
-ENV DL_VERSION 0.17.1
+ARG DL_VERSION_SET=0.17.1
+ENV DL_VERSION=$DL_VERSION_SET
 
 USER root
 
